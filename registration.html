@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function ColourChange() {
+			if(document.body.style.backgroundColor=='lightgreen')
+				document.body.style.backgroundColor='DeepSkyBlue';
+			else
+				document.body.style.backgroundColor='lightgreen';
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body style="background-color: lightgreen;">
+	<h1>Registration Portal</h1>
+	<p>Register into our program for this month's road safety newsletter!</p>
+
+	<form action="response.html" method="post">
+
+		<fieldset>
+
+			<legend>Personal Details</legend>
+
+			User-ID : <input type="text" required>*<br><br><br> 
+
+
+
+			E-Mail Id : <input type="email" placeholder="abc@gmail.com"> <br><br><br> 
+
+
+
+			Contact No: <input type="tel" name="phone" placeholder="+91-1234567890" 
+
+			pattern="[+91]{3}-[0-9]{10}" required>* <br><br><br>
+
+
+
+			Date of Birth : <input type="date"> <br><br><br>
+
+			Gender:<br> 
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="other" checked>
+			<label for="other">Other</label>
+			<br><br><br>
+
+			Time of Submission : <input type="datetime-local"> <br><br><br> 
+
+			Usual Travel Timings: <br><br>
+			<input type="checkbox" value="8AM - 10 AM">
+			<label> 8AM - 10AM </label>
+			<input type="checkbox" value="8AM - 10 AM">
+			<label> 10AM - 1PM </label>
+			<input type="checkbox" value="8AM - 10 AM">
+			<label> 1PM - 5PM </label>
+			<input type="checkbox" value="8AM - 10 AM">
+			<label> 5PM - 8PM </label>
+			<input type="checkbox" value="8AM - 10 AM">
+			<label> 8PM - 10PM </label>
+			<br><br><br>
+
+
+			Vehicle Owned: <select>
+				<option value="None" selected>None</option>
+				<option>Non Gear Vehicle</option>
+				<option>2 Wheeler Motorcycle</option>
+				<option>4 Wheeler</option>
+				<option>SUV</option>
+				<option>Bus</option>
+				<option>Tractor</option>
+			</select> <br><br><br>
+
+			Password : <input type="password" minlength="3" maxlength="8"  required>* <br><br><br>
+
+			Comment : <textarea rows="10" cols="50"> Please give your input.</textarea> <br><br><br>
+
+
+		</fieldset><br> <br>
+
+
+
+		<input type="reset" value="Reset all value"> &nbsp &nbsp &nbsp
+
+		<input type="submit" value="Submit Form"> &nbsp &nbsp &nbsp
+
+		<input type="button" name="submit" value="Login"> &nbsp &nbsp
+
+		<input type="button" name="colourchange" value="ColourClick" onclick="ColourChange();"> &nbsp &nbsp
+
+		<input type="button" name="reset" value="Cancel"><br> <br>
+
+	</form>
+
+	<footer>
+
+		<center> &copy; <i> Road Safety Campaign 2020	</i> </center>
+
+	</footer> 
+	<br><br><br> <br><br><br>
+</body>
+</html>
