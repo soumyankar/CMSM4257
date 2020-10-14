@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		div.gallery {
+			margin: 5px;
+			border: 1px solid #000;
+			float: left;
+			width: 400px;
+			height: auto;	
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: 100%;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+	</style>
+</style>
+</head>
+<body style="background-image: linear-gradient(white, red);">
+	<h1>Gallery</h1>
+	<p> We have had a lot of success in the past with some of our events across the entire globe. This year we intend to add Kolkata into our picture.</p>
+	<p>Pictures from our past events --</p>
+
+	<div class="line"></div>
+
+	<div class="gallery">
+		<a href="static/gallery-image1.jpg">
+			<img src="static/gallery-image1.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Volunteers holding banners</div>
+	</div>
+
+	<div class="gallery">
+		<a href="static/gallery-image2.jpg">
+			<img src="static/gallery-image2.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Safety Awareness March</div>
+	</div>
+
+	<div class="gallery">
+		<a href="static/gallery-image3.jpg">
+			<img src="static/gallery-image3.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Drama Play in Delhi</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="static/gallery-image4.jpg">
+			<img src="static/gallery-image4.jpg" width="600" height="400">
+		</a>
+		<div class="desc">Collaboration with the Police Force</div>
+	</div>
+
+	<h2>Click on the image below to use Hotspots</h2>
+	<div class="gallery">
+		<img src="static/gallery-image4.jpg" width="600" height="400"  usemap="#planetmap">
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,126" href="static/roadmap1.png" >
+			<area shape="circle" coords="190,150,50" href="static/roadmap2.png" >
+			<area shape="circle" coords="370,230,35" href="static/roadmap3.jpg"	>
+		</map>
+		<div class="desc">Collaboration with the Police Force</div>
+	</div>
+</body>
+</html>
